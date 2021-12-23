@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
     <title>kakaolink</title>
-</head>
-<body>
+  </head>
+  <body>
     <a id="create-kakao-link-btn" href="javascript:;">
-        <img
-          src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
-        />
-      </a>
+      <img
+        src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+      />
+    </a>
     <script type="text/javascript">
-        Kakao.init('942261fc0a440ddb748ade74fbc2b979');
-        Kakao.isInitialized(); 
-        Kakao.Link.createDefaultButton({
-        container: '#create-kakao-link-btn',
-        objectType: 'feed',
+      Kakao.init("942261fc0a440ddb748ade74fbc2b979");
+      Kakao.isInitialized();
+      Kakao.Link.createDefaultButton({
+        container: "#create-kakao-link-btn",
+        objectType: "feed",
         content: {
-        title: '(주)휴민텍',
-        description: '휴민텍에서 마음을 담은 카드가 도착했습니다.',
-        imageUrl:
-            'https://media.discordapp.net/attachments/617149656547328014/923501528105517066/1640250304658.png',
-        link: {
-            mobileWebUrl: 'https://huminteccard.netlify.app/',
-            webUrl: 'https://huminteccard.netlify.app/',
-        }},
-        buttons: [
-        {
-            title: '카드 열기',
-            link: {
-            mobileWebUrl: 'https://huminteccard.netlify.app/',
-            webUrl: 'https://huminteccard.netlify.app/',
+          title: "(주)휴민텍",
+          description: "휴민텍에서 마음을 담은 카드가 도착했습니다.",
+          imageUrl:
+            "https://cdn.discordapp.com/attachments/617149656547328014/923527290992853023/unknown.png",
+          link: {
+            mobileWebUrl: "https://huminteccard.netlify.app/",
+            webUrl: "https://huminteccard.netlify.app/",
+          },
         },
-      },
-    ],
-  })
-      </script>
-</body>
+        buttons: [
+          {
+            title: "카드 열기",
+            link: {
+              mobileWebUrl: "https://huminteccard.netlify.app/",
+              webUrl: "https://huminteccard.netlify.app/",
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
 </html>
