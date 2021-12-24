@@ -8,16 +8,25 @@
     <title>kakaolink</title>
   </head>
   <body>
-    <a id="create-kakao-link-btn" href="javascript:;">
+    <a id="create-kakao-link-btn1" href="javascript:;"">
       <img
         src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
       />
+      <p>한글로 공유하기</p>
+    </a>
+    
+    <a id="create-kakao-link-btn2" href="javascript:;">
+      <img
+        src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+      />
+      <p>영어로 공유하기</p>
     </a>
     <script type="text/javascript">
       Kakao.init("942261fc0a440ddb748ade74fbc2b979");
       Kakao.isInitialized();
+
       Kakao.Link.createDefaultButton({
-        container: "#create-kakao-link-btn",
+        container: "#create-kakao-link-btn1",
         objectType: "feed",
         content: {
           title: "(주)휴민텍",
@@ -35,6 +44,31 @@
             link: {
               mobileWebUrl: "https://huminteccard.netlify.app/",
               webUrl: "https://huminteccard.netlify.app/",
+            },
+          },
+        ],
+      });
+
+      
+      Kakao.Link.createDefaultButton({
+        container: "#create-kakao-link-btn2",
+        objectType: "feed",
+        content: {
+          title: "Humimtech Corp.",
+          description: "It's a seasons greeting card from the Humintec Corp.",
+          imageUrl:
+            "https://cdn.discordapp.com/attachments/617149656547328014/923527290992853023/unknown.png",
+          link: {
+            mobileWebUrl: "https://huminteccard.netlify.app/page/English",
+            webUrl: "https://huminteccard.netlify.app/page/English",
+          },
+        },
+        buttons: [
+          {
+            title: "카드 열기",
+            link: {
+              mobileWebUrl: "https://huminteccard.netlify.app/page/English",
+              webUrl: "https://huminteccard.netlify.app/page/English",
             },
           },
         ],
